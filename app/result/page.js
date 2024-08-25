@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import getStripe from '@/utils/get-stripe';
 import { useSearchParams } from 'next/navigation';
 import { Box, CircularProgress, Container, Typography } from '@mui/material';
@@ -43,7 +43,7 @@ const ResultPage = () => {
     return (
       <Container maxWidth="100vw" sx={{ textAlign: 'center', mt: 4 }}>
         <CircularProgress />
-        <Typorgraphy variant="h6">Loading...</Typorgraphy>
+        <Typography variant="h6">Loading...</Typography>
       </Container>
     );
   }
