@@ -54,6 +54,7 @@ export default function Flashcards() {
             <Card>
               <CardActionArea
                 onClick={() => {
+                  console.log(flashcard.name);
                   handleCardClick(flashcard.name);
                 }}
               >
